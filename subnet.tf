@@ -5,10 +5,10 @@ resource "aws_subnet" "public_subnet" {
   availability_zone       = element(var.availability_zone, count.index)
   map_public_ip_on_launch = true
 
-  tags = {
-    Name = element(var.public_subnet_names, count.index)
-    Type = "VPC Public Subnet"
-  }
+  tags = merge(var.common_tags, {
+    Name = element(var.public_subnet_names, count.index),
+    Type = "VPC Public Subnet" }
+  )
 }
 
 resource "aws_subnet" "private_subnet" {
@@ -18,8 +18,8 @@ resource "aws_subnet" "private_subnet" {
   availability_zone       = element(var.availability_zone, count.index)
   map_public_ip_on_launch = true
 
-  tags = {
-    Name = element(var.private_subnet_names, count.index)
+  tags = merge(var.common_tags, {
+    Name = element(var.private_subnet_names, count.index),
     Type = "VPC Private Subnet"
-  }
+  })
 }
