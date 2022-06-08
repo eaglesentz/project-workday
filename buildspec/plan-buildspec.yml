@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+
+  pre_build:
+    commands:
+      - terraform init
+      - terraform validate
+  build:
+    commands:
+      - echo Build started on `date`
+      - terraform plan
+
+  post_build:
+    commands:
+      - echo terraform $TF_COMMAND completed on `date`

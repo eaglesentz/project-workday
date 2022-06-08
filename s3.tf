@@ -7,3 +7,12 @@ resource "aws_s3_bucket" "proj_s3_buckets" {
     }
   )
 }
+
+resource "aws_s3_bucket" "artifact_s3_buckets" {
+  bucket        = "artifactpipeline-buckets"
+  force_destroy = true
+  tags = merge(var.common_tags, {
+    Name = "${var.service_name}-artifact-bucket"
+    }
+  )
+}
