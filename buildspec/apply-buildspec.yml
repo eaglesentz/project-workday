@@ -1,7 +1,5 @@
 version: 0.2
-
 phases:
-
   pre_build:
     commands:
       - terraform init
@@ -10,7 +8,6 @@ phases:
     commands:
       - echo Apply started on `date`
       - terraform apply -auto-approve
-
   post_build:
     commands:
       - echo terraform $TF_COMMAND completed on `date`
