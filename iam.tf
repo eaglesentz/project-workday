@@ -1,5 +1,5 @@
 resource "aws_iam_role" "codepipeline_role" {
-  name = "test-role"
+  name = "pipeline-role"
 
   assume_role_policy = <<EOF
 {

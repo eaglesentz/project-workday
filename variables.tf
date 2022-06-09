@@ -54,6 +54,6 @@ variable "dockerhub_credentials" {
 }
 
 variable "codestar_connector_credentials" {
-  type    = string
-  default = "arn:aws:codestar-connections:eu-west-2:100753669199:connection/a2f8afd7-b033-44ec-a50c-10e5a469b89c"
+  type = string
+
 }
