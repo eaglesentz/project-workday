@@ -30,12 +30,7 @@ variable "ami" {
 variable "availability_zone" {
   type = list(string)
 }
-variable "AWS_ACCESS_KEY" {
-  type = string
-}
-variable "AWS_SECRET_KEY" {
-  type = string
-}
+
 variable "domain_name" {
   type = list(string)
 }
