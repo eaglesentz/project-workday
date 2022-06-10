@@ -4,6 +4,6 @@ public_subnet_cidr             = ["10.0.1.0/24", "10.0.2.0/24"]
 public_subnet_names            = ["project-public-a", "project-public-b"]
 private_subnet_cidr            = ["10.0.3.0/24", "10.0.4.0/24"]
 private_subnet_names           = ["proj-private-a", "proj-private-b"]
-domain_name                    = ["eaglestbuckets", "eaglesetexbuckets"]
+domain_name                    = ["workdayfed", "workdayhil"]
 availability_zone              = ["eu-west-1a", "eu-west-1b"]
 vpc_id = "vpc-0167fa803716381c4"
