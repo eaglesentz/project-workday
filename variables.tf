@@ -47,3 +47,17 @@ variable "common_tags" {
 variable "vpc_id" {
   type = string
 }
+
+variable "password" {
+  type = string
+
+}
+
+variable "username" {
+  type = string
+
+}
+
+variable "secretname" {
+  type = string
+}
