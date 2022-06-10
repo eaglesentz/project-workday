@@ -1,4 +1,4 @@
-/*resource "aws_s3_bucket" "proj_s3_buckets" {
+resource "aws_s3_bucket" "proj_s3_buckets" {
   count         = length(var.domain_name)
   bucket        = var.domain_name[count.index]
   force_destroy = true
@@ -7,4 +7,4 @@
     }
   )
 }
-*/
+

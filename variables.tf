@@ -57,3 +57,7 @@ variable "codestar_connector_credentials" {
   type = string
 
 }
+
+variable "vpc_id" {
+  type = string
+}
