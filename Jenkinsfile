@@ -13,6 +13,7 @@ pipeline{
         steps {
            withAWS(credentials: 'workdaycred', region: 'eu-west-1') {
                  sh 'terraform init'
+                 sh 'terraform plan'
                  }
                }
             }
