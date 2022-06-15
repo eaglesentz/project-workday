@@ -24,9 +24,7 @@ variable "private_subnet_names" {
 variable "instance_type" {
   default = "t2.micro"
 }
-variable "ami" {
-  default = "ami-00f6a0c18edb19300"
-}
+
 variable "availability_zone" {
   type = list(string)
 }
@@ -60,4 +58,14 @@ variable "username" {
 
 variable "secretname" {
   type = string
+}
+
+variable "keypair" {
+  type    = string
+  default = ""
+}
+
+variable "ami-id" {
+  type    = string
+  default = ""
 }
