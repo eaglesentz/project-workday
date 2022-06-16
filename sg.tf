@@ -24,7 +24,8 @@ resource "aws_security_group" "alb_security_group" {
     to_port     = 0
     cidr_blocks = ["0.0.0.0/0"]
   }
-  tags = {
+  tags = merge(var.common_tags, {
     Name = "${var.service_name}-alb_security_group"
   }
+  )
 }
