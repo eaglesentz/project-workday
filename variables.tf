@@ -69,3 +69,13 @@ variable "ami-id" {
   type    = string
   default = ""
 }
+
+variable "internet-gateway" {
+  type    = string
+  default = ""
+}
+
+variable "nat-gateway" {
+  type    = string
+  default = ""
+}
