@@ -7,7 +7,7 @@ pipeline{
         stage('Source Code'){
             steps{
                 git branch: 'main', credentialsId: 'workdaygithub', url: 'https://github.com/eaglesentz/project-workday'
-            }
+           }
         }
     stage('Terraform Init Stage'){
         steps {
